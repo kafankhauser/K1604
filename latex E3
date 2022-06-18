@@ -1,0 +1,59 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{hologo}
+\usepackage[german]{babel}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{babelbib}
+\usepackage{biblatex}
+
+\begin{document}
+
+\section{Vorlage 44 zur Einsendeaufgabe 3, Kurs 01604}
+Diese Einsendeaufgabe ist eine Prüfungsleistung, für welche die von der Kursbetreuung in Moodle offiziell verkündeten Regeln gelten.Mit Abgabe einer Einsendung zu dieser Einsendeaufgabe erklären Sie sowohl Ihre Kenntnis von als auch Ihr Einverständnis mit diesen Regeln.
+
+\subsection{Die Aufgabe}
+In dieser Kurseinheit wird \hologo{LaTeX}  vorgestellt. \hologo{LaTeX} ist ein \emph{Textsatzprogramm}, welches das Erstellen von wissenschaftlichen Texten erleichert. In dieser Aufgabe sollen Sie das vorliegende Dokument möglichst genau mit semantisch korrektem \hologo{LaTeX} nachbilden. So soll insbesonders die Aufteilung der Abschnitte (hier also in Abschnitt 1, Abschnitt 1.1, usw.), die Formatierung und der Text dieses Dokuments \textbf{exakt} nachgebildet werden. (Dabei bewerten wir jedoch semantische Korrektheit des \hologo{LaTeX}-Dokumentes höher als "`optische Übereinstimmung"' mit der Vorlage.) \\ Verwenden Sie die Dokumentenklasse \texttt{article} mit den Optionen \texttt{a4paper} und \texttt{10pt}. Verwenden sie \emph{keine} Pakete wie \texttt{typearea} und \texttt{geometry} zur Manipulation der Größe des Textbereichs. \\ Setzen Sie das Literaturverzeichnis auf Deutsch, mit \hologo{BibTeX}, analog zum Beispiel 4.7 und Beispiel 4.8 aus dem Kurstext. Achten Sie auf den korrekten \hologo{BibTeX}-Stil. Verwenden Sie \emph{nicht} das Paket \texttt{biblatex}. \\ Verwenden Sie außerdem das Paket \texttt{hologo} zum Setzen der Logos: \hologo{LaTeX}, \hologo{BibTeX}, etc. Konsultieren Sie dazu die Dokumentation des \texttt{hologo}-Paketes, online auf CTAN.\\ Für diese Aufgabe gibt es bis zu 40 Punkte.
+
+\subsection{Die Lösung}
+Bitte senden Sie folgende Dokumente als Teil der Lösung ein:
+\begin{itemize}
+\item die \textbf{originale PDF Vorlage} (Also diese Datei),
+\item das von Ihnen erstellte \textbf{\hologo{LaTeX} Dokument} (also die .tex Datei),
+\item die von Ihnen erstellte \textbf{Literatur Datenbank} (also die .bib Datei), und
+\item das von Ihnen \textbf{komplilierte Dokument} (also die erzeugte .pdf Datei)
+\end{itemize}
+Bitte bennen Sie die Dateien so, dass auf den ersten Blick klar ist, welche Datei welcher der obigen Forderungen entspricht. Auf Leerzeichen und Sonderzeichen wie Umlaute innerhalb der Dateinamen bitten wir zu verzichten. \\ Laden Sie die Dateien bitte als vier Einzeldateien in Moodle hoch. Es ist nicht nötig, hierfür neue Verzeichnisse anzulegen. Laden Sie die Dateien \emph{keinesfalls} als ZIP-/RAR-Archiv oder ähnliches hoch: Sie machen uns damit den Korrekturvorgang nur technisch unnötig aufwendig.
+
+\section{Tabellen}
+Tabelle 1 gibt eine kleine Übersicht über verschiedene Worttypen. Die Definitionen dieser Worttypen lassen sich online leicht nachschlagen. Nicht immer wird \\
+
+\begin{table}
+\centering
+\begin{tabular}{| r | c | c | c |}
+\hline
+ & Palindrom &Ambigramm & Mordnilap \\
+\hline \hline
+OTTO &ja&ja & nein\\
+\hline
+CHECKBOOK & nein & ja & nein \\
+\hline
+suns & nein & ja & nein \\
+\hline 
+Nebel & nein & nein & ja\\
+\hline
+\end{tabular}
+\caption{Tabelle 1: Verschiedene Wortarten}
+\end{table}
+zwischen Palindromen im eigentlichen Sinn und Mordnilaps unterschieden, wohl aber stets zwischen Ambigrammen und Palindromen.
+
+\section{Formeln}
+Die bekannten Fibonacci-Zahlen $F_n$ sind rekursiv definiert durch $F_1$ = $F_2$= 1 und $F_n$ = $F_{n-1}$ +  $F_{n-2}$ für $n\geq3$. Fibonacci-Zahlen treten sowohl in der Natur als auch in vielen theoretischen Anwendungen auf. Die Formel in Satz 1 wurde von verschiedenen Mathematikern im 19. und 19. Jahrhundert entdeckt. \\
+\textbf{Satz 1}  \emph{Es sei  $\phi=\frac{1+\sqrt{5}}{2}$ (der goldene Schnitt) und $\psi=\frac{1-\sqrt{5}}{5}$. Dann gilt}
+
+\begin{align*}
+\forall n\in\mathbb{N}: F_n=\frac{\phi^n-\psi^n}{\sqrt{5}}.
+\end{align*}
